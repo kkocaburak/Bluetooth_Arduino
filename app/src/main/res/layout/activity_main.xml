@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnPairedClick"
+        android:text="Bluetooth Cihazları"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:inputType="textPersonName"
+        android:gravity="center_horizontal"
+        android:hint="Tarla Uzunluğu"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textSize="24sp"
+        android:inputType="textPersonName"
+        android:gravity="center_horizontal"
+        android:hint="Sıra Genişliği"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="24sp"
+        android:inputType="textPersonName"
+        android:gravity="center_horizontal"
+        android:hint="Tarla Genişliği"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:textSize="22sp"
+        android:text="Durdur"
+        ></Button>
+
+</LinearLayout>

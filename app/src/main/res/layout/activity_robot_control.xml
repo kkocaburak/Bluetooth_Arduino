@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RobotControl">
+
+    <Button
+        android:id="@+id/robot_control_buton_ileri"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="80dp"
+        android:text="İleri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/robot_control_buton_sol"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Sol"
+        app:layout_constraintEnd_toStartOf="@+id/robot_control_buton_ileri"
+        app:layout_constraintTop_toBottomOf="@+id/robot_control_buton_ileri" />
+
+    <Button
+        android:id="@+id/robot_control_buton_sag"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="Sağ"
+        app:layout_constraintStart_toEndOf="@+id/robot_control_buton_ileri"
+        app:layout_constraintTop_toTopOf="@+id/robot_control_buton_sol" />
+
+    <Button
+        android:id="@+id/robot_control_buton_geri"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        android:text="Geri"
+        app:layout_constraintStart_toStartOf="@+id/robot_control_buton_ileri"
+        app:layout_constraintTop_toBottomOf="@+id/robot_control_buton_sol" />
+</androidx.constraintlayout.widget.ConstraintLayout>
